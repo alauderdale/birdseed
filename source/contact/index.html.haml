@@ -1,0 +1,48 @@
+%section.double-padding-bottom.double-padding-top
+	.container
+		.row
+			.col-lg-12.text-center
+				%h1.bold-font.margin-bottom
+					How can we help?
+				%h3
+					Fill out th eform below and we will get back to you within 24 hours.
+%section.double-padding-top
+	.container
+		.row
+			.col-lg-1
+			.col-lg-10
+				.row
+					
+					.col-lg-6.order-md-3
+						%form
+							.form-group
+								%input.form-control.form-control-lg{:placeholder=>"Name"}
+							.form-group
+								%input.form-control.form-control-lg{:placeholder=>"Email"}
+							.form-group
+								%input.form-control.form-control-lg{:placeholder=>"Phone"}
+							.form-group
+								%textarea.form-control.form-control-lg{:placeholder=>"How can we help?", :rows=>"6"}
+							.form-group.margin-top
+								%button.btn.btn-lg.btn-dark.btn-block{:type=>"submit"}
+									Send
+					.col-lg-1.order-md-2
+					.col-lg-5.order-md-1
+						.map
+							%img.max-width.d-none.d-lg-inline.ml-auto{:src=>"../images/map.png"}
+							.contact-detils-panel.margin-top
+								%h4.bold-font
+									Contact details
+								%h5.margin-bottom
+									Cherry Tower
+									%br
+									950 South Cherry Street, Suite 700
+									%br
+									Denver, Colorado 80246
+								%h5
+									T: 333.333.3333
+									%br
+									F: 333.333.3333
+									%br
+									E: info@spr.com
+			.col-lg-1

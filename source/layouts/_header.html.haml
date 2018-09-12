@@ -1,0 +1,47 @@
+.mobile-menu.d-lg-none
+  .navbar-nav.mx-auto
+    .nav-item
+      %a.nav-link{:href => "/practice-areas"}
+        Practice areas
+    .nav-item
+      %a.nav-link{:href => "/about"}
+        About us
+    .nav-item
+      %a.nav-link{:href => "/team"}
+        Attorneys
+    .nav-item
+      %a.nav-link{:href => "/resources"}
+        Resources
+    .nav-item
+      %a.nav-link{:href => "/blog"}
+        News
+%nav.navbar.fixed-top.navbar-expand-sm#primary-nav
+  .container
+    %a.navbar-brand{:href => "/"}
+      %img{:width => "210px", :src => "/images/logo.svg"}
+    .d-none.d-lg-inline.mr-auto
+      .navbar-nav
+        .nav-item
+          %a.nav-link{:href => "/practice-areas"}
+            Tour
+        .nav-item
+          %a.nav-link{:href => "/about"}
+            About 
+        .nav-item
+          %a.nav-link{:href => "/team"}
+            Pricing
+    %button.tcon.tcon-menu--xcross.menu-button.d-lg-none.toggle-menu-button{:type => "button"}
+      %span.tcon-menu__lines{"aria-hidden" => "true"}
+      %span.tcon-visuallyhidden
+        toggle menu
+    .d-none.d-lg-inline.ml-auto
+      .navbar-nav
+        .nav-item
+          %a.nav-link{:href => "/practice-areas"}
+            Sign in
+    .navbar-nav.d-none.d-lg-inline.position-relative
+      .form-inline
+        %a.btn.btn-primary.btn-lg.nav-link.contact-button{:href => "/contact"}
+          Create free account
+
+
