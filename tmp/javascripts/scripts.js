@@ -7,6 +7,6 @@ $(document).ready(function(){
     $( ".menu-link" ).click(function() {
         $('.menu-button').trigger('click');
     });
-    
 
+   
 });

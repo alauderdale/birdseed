@@ -1,4 +1,4 @@
-%section.main-hero
+%section.no-padding-bottom.main-hero#intro
 	.container
 		.row
 			.col-xl-6.col-lg-8
@@ -10,8 +10,196 @@
 					%a.btn.btn-lg.btn-primary.margin-right{:href=>"#"}
 						Create free account
 					%a.btn.btn-lg.btn-outline-primary{:href=>"#"}
-						Create free account
+						%i.material-icons
+							play_arrow
+						See it in action
 			.col-xl-6.col-lg-4
-				%img.padded.no-padding-top.full-width{:src=>"../images/home-graphic.png", :width=>"565px"}
+				%img.padded.no-padding-top{:src=>"../images/home-graphic.png", :width=>"545px"}
+%section#why
+	.container
+		.row
+			.col-lg-12
+				%h2.text-center.margin-bottom
+					Why you need 
+					%span.bold-font
+						more 
+					than just live chat
+				.row.justify-content-center
+					.col-lg-6
+						%p.text-center.body-large.light-text-color
+							Once you realize how many different tools are needed to engage more of your website visitors.
+		.row.double-margin-top.why-cards
+			.col-md-4
+				.card.elevation-2
+					.card-body.text-center
+						%img.margin-bottom{:src=>"../images/icon-early.svg", :width=>"100px"}
+						%p.body-large.bold-font.regular-font-name
+							Early stage
+						%p.light-text-color
+							Based on their stage in the sales cycle AND for all the times outside of regular business hours when you aren’t able to respond real-time!
+			.col-md-4
+				.card.elevation-2
+					.card-body.text-center
+						%img.margin-bottom{:src=>"../images/icon-real-time.svg", :width=>"100px"}
+						%p.body-large.bold-font.regular-font-name
+							Real time avalibility
+						%p.light-text-color
+							Once you realize how many different tools are needed to engage more of your website visitors, it can be daunting to figure out where to place them
+			.col-md-4
+				.card.elevation-2
+					.card-body.text-center
+						%img.margin-bottom{:src=>"../images/icon-personal.svg", :width=>"100px"}
+						%p.body-large.bold-font.regular-font-name
+							Personal preference
+						%p.light-text-color
+							That is why we include all of them in one simple button, which can be customized based on your hours of operations.
+/ %section#tools
+/ 	.container
+/ 		.row
+/ 			.col-lg-12
+/ 				%h2.text-center.margin-bottom.white-text-color.bold-font
+/ 					Powerful tools included
+/ 				.row.justify-content-center
+/ 					.col-lg-6.text-center
+/ 						%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+/ 							Contact form
+/ 						%p.white-text-color
+/ 							Create Personal Response Expectation for your company.
+/ 						%img{:src=>"../images/tool-preview-contact.png", :width=>"370px"}
+/ 						.margin-top
+/ 							%a.btn.btn-lg.btn-primary.margin-right{:href=>"#"}
+/ 								Get started
+
+
+%section#tools
+	.container
+		.row
+			.col-lg-12
+				%h2.text-center.margin-bottom.white-text-color.bold-font
+					Powerful tools included
+				.row.justify-content-center
+					.col-lg-12.text-center
+						#ToolsSLider.carousel.slide.carousel-fade.tools-slider{"data-ride" => "carousel", "data-interval"=>"4000"}
+							.carousel-inner
+								#item-chat.carousel-item.active
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Live chat
+										%p.white-text-color
+											Text Live Chat + Send Videos Real-time to your website visitors.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-chat.png"}
+								#item-call.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-call.png"}
+								#item-idea.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-idea.png"}
+								#item-event.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-event.png"}
+								#item-contact.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-contact.png"}
+								#item-test.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-test.png"}
+								#item-email.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-email.png"}
+								#item-launch.carousel-item
+									.carousel-caption
+										%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
+											Contact form
+										%p.white-text-color
+											Create Personal Response Expectation for your company.
+									.img-container
+										%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-launch.png"}
+							.tool-slider-indicators.row
+								.tool-icon.tool-icon-chat.col-lg.active{"data-slide-to" => "0", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-chat.svg", :width=>"73px"}
+									%p.body-small
+										Live
+										%br
+										chat
+								.tool-icon.tool-icon-call.col-lg{"data-slide-to" => "1", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-call.svg", :width=>"73px"}
+									%p.body-small
+										Phone 
+										%br
+										call
+								.col-lg-5
+								.tool-icon.tool-icon-idea.col-lg{"data-slide-to" => "2", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-idea.svg", :width=>"73px"}
+									%p.body-small
+										Knowledge
+										%br
+										library
+								.tool-icon.tool-icon-event.col-lg{"data-slide-to" => "3", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-event.svg", :width=>"73px"}
+									%p.body-small
+										Schedule
+										%br
+										event
+								.w-100
+								.tool-icon.tool-icon-contact.col-lg{"data-slide-to" => "4", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-contact.svg", :width=>"73px"}
+									%p.body-small
+										Contact
+										%br
+										form
+								.tool-icon.tool-icon-test.col-lg{"data-slide-to" => "5", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-test.svg", :width=>"73px"}
+									%p.body-small
+										Client
+										%br
+										testimonials
+								.col-lg-5
+								.tool-icon.tool-icon-email.col-lg{"data-slide-to" => "6", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-email.svg", :width=>"73px"}
+									%p.body-small
+										Email
+										%br
+										capture
+								.tool-icon.tool-icon-launch.col-lg{"data-slide-to" => "7", "data-target" => "#ToolsSLider"}
+									%img.margin-bottom{:src=>"../images/tool-icon-launch.svg", :width=>"73px"}
+									%p.body-small
+										Link
+										%br
+										launcher
+
+
+
+
 
 =partial("shared/promo")

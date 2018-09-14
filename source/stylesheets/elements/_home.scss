@@ -3,7 +3,83 @@
 	background: url("../images/main-header-bg.svg") no-repeat top right;
 }
 
+.why-cards{
+	.card{
+		min-height:384px;
+		@include breakpoint(lg) {
+			min-height:412px;
+		}
+		@include breakpoint(md) {
+			min-height:528px;
+		}
+		@include breakpoint(sm) {
+			min-height:auto;
+			margin-bottom:$baseline*2;
+		}
 
+	}
+}
+
+
+
+#tools{
+	background: url("../images/bg-tools-accent-chat.svg") no-repeat top center;
+	background-size:100%;
+	@include transition-duration(.4s);
+
+}
+
+.tools-slider-chat-bg{
+	background-image:url("../images/bg-tools-accent-3.svg")!important;
+}
+
+.tools-slider{
+
+	.carousel-inner{
+		max-width:570px;
+		margin:0 auto;
+		position:relative;
+		overflow:visible;
+		.carousel-caption{
+			top:0;
+		}
+		.img-container{
+			position:relative;
+			padding-top:140px;
+			max-width:370px;
+			text-align:center;
+			margin:0 auto;
+		}
+	}
+}
+
+.tools-controls{
+
+}
+
+.carousel-indicators, .tool-slider-indicators{
+	position:absolute;
+	width:100%;
+	margin:0 auto;
+	bottom:0;
+}
+
+.tool-icon{
+	margin-bottom:$baseline*2;
+	text-align:center;
+	cursor:pointer;
+	@include transition-duration(.2s);
+	img{
+		@include transition-duration(.2s);
+		opacity:.8;
+	}
+	&:hover, &.active{
+		color:black;
+		img{
+			opacity:1;
+		}
+	}
+}
 
 
 
