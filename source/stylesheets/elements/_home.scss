@@ -23,30 +23,46 @@
 
 
 #tools{
-	background: url("../images/bg-tools-accent-chat.svg") no-repeat top center;
-	background-size:100%;
-	@include transition-duration(.4s);
 
 }
 
-.tools-slider-chat-bg{
-	background-image:url("../images/bg-tools-accent-3.svg")!important;
-}
 
 .tools-slider{
 
 	.carousel-inner{
-		max-width:570px;
 		margin:0 auto;
 		position:relative;
 		overflow:visible;
+		.carousel-item{
+			background: url("../images/bg-tools-accent-chat.svg") no-repeat top center;
+			background-size:100%;
+			@include transition-duration(.4s);
+			padding-top:100px;
+		}
+		#item-call{
+			background: url("../images/bg-tools-accent-call.svg") no-repeat top center;
+			background-size:100%;
+			.carousel-caption{
+				p{
+					background:$accent-two;
+				}
+			}
+		}
 		.carousel-caption{
-			top:0;
+			bottom:135px;
+			p{
+				padding:5px 20px;
+				background:$accent-one;
+				border-radius:100px;
+				text-align:center;
+				display:inline-flex;
+				font-size:14px;
+			}
 		}
 		.img-container{
 			position:relative;
-			padding-top:140px;
-			max-width:370px;
+			padding-bottom:220px;
+			max-width:320px;
 			text-align:center;
 			margin:0 auto;
 		}
@@ -65,7 +81,6 @@
 }
 
 .tool-icon{
-	margin-bottom:$baseline*2;
 	text-align:center;
 	cursor:pointer;
 	@include transition-duration(.2s);

@@ -1,128 +1,102 @@
 %section
 .d-none.d-lg-inline.d-md-inline
 	%section#tools
-		.container
-			.row
-				.col-lg-12
-					%h2.text-center.margin-bottom.white-text-color.bold-font
-						Powerful tools included
-					.row.justify-content-center
-						.col-lg-12.text-center
-							#ToolsSLider.carousel.slide.carousel-fade.tools-slider{"data-ride" => "carousel", "data-interval"=>"4000"}
-								.carousel-inner
-									#item-chat.carousel-item.active
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Live chat
-											%p.white-text-color
-												Text Live Chat + Send Videos Real-time to your website visitors.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-chat.png"}
-									#item-call.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-call.png"}
-									#item-idea.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-idea.png"}
-									#item-event.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-event.png"}
-									#item-contact.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-contact.png"}
-									#item-test.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-test.png"}
-									#item-email.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-email.png"}
-									#item-launch.carousel-item
-										.carousel-caption
-											%p.body-large.regular-font-name.bold-font.white-text-color.half-margin-bottom
-												Contact form
-											%p.white-text-color
-												Create Personal Response Expectation for your company.
-										.img-container
-											%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-launch.png"}
-								.tool-slider-indicators.row
-									.tool-icon.tool-icon-chat.col-lg.active{"data-slide-to" => "0", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-chat.svg", :width=>"73px"}
-										%p.body-small
-											Live
-											%br
-											chat
-									.tool-icon.tool-icon-call.col-lg{"data-slide-to" => "1", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-call.svg", :width=>"73px"}
-										%p.body-small
-											Phone 
-											%br
-											call
-									.col-lg-5
-									.tool-icon.tool-icon-idea.col-lg{"data-slide-to" => "2", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-idea.svg", :width=>"73px"}
-										%p.body-small
-											Knowledge
-											%br
-											library
-									.tool-icon.tool-icon-event.col-lg{"data-slide-to" => "3", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-event.svg", :width=>"73px"}
-										%p.body-small
-											Schedule
-											%br
-											event
-									.w-100
-									.tool-icon.tool-icon-contact.col-lg{"data-slide-to" => "4", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-contact.svg", :width=>"73px"}
-										%p.body-small
-											Contact
-											%br
-											form
-									.tool-icon.tool-icon-test.col-lg{"data-slide-to" => "5", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-test.svg", :width=>"73px"}
-										%p.body-small
-											Client
-											%br
-											testimonials
-									.col-lg-5
-									.tool-icon.tool-icon-email.col-lg{"data-slide-to" => "6", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-email.svg", :width=>"73px"}
-										%p.body-small
-											Email
-											%br
-											capture
-									.tool-icon.tool-icon-launch.col-lg{"data-slide-to" => "7", "data-target" => "#ToolsSLider"}
-										%img.margin-bottom{:src=>"../images/tool-icon-launch.svg", :width=>"73px"}
-										%p.body-small
-											Link
-											%br
-											launcher
+		#ToolsSLider.carousel.slide.carousel-fade.tools-slider{"data-ride" => "carousel", "data-interval"=>"10000"}
+			.carousel-inner
+				#item-chat.carousel-item.active
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-chat.png"}
+					.carousel-caption
+						%p
+							Text Live Chat + Send Videos Real-time to your website visitors.
+				#item-call.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-call.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+				#item-idea.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-idea.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+				#item-event.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-event.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+				#item-contact.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-contact.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+				#item-test.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-test.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+				#item-email.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-email.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+				#item-launch.carousel-item
+					.img-container
+						%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-launch.png"}
+					.carousel-caption
+						%p
+							Create Personal Response Expectation for your company.
+			.carousel-indicators.tool-slider-indicators.row
+				.tool-icon.tool-icon-chat.col-md.active{"data-slide-to" => "0", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-chat.svg", :width=>"73px"}
+					%p.body-small
+						Live
+						%br
+						chat
+				.tool-icon.tool-icon-call.col-md{"data-slide-to" => "1", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-call.svg", :width=>"73px"}
+					%p.body-small
+						Phone 
+						%br
+						call
+				.tool-icon.tool-icon-idea.col-md{"data-slide-to" => "2", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-idea.svg", :width=>"73px"}
+					%p.body-small
+						Knowledge
+						%br
+						library
+				.tool-icon.tool-icon-event.col-md{"data-slide-to" => "3", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-event.svg", :width=>"73px"}
+					%p.body-small
+						Schedule
+						%br
+						event
+				.tool-icon.tool-icon-contact.col-md{"data-slide-to" => "4", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-contact.svg", :width=>"73px"}
+					%p.body-small
+						Contact
+						%br
+						form
+				.tool-icon.tool-icon-test.col-md{"data-slide-to" => "5", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-test.svg", :width=>"73px"}
+					%p.body-small
+						Client
+						%br
+						testimonials
+				.tool-icon.tool-icon-email.col-md{"data-slide-to" => "6", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-email.svg", :width=>"73px"}
+					%p.body-small
+						Email
+						%br
+						capture
+				.tool-icon.tool-icon-launch.col-md{"data-slide-to" => "7", "data-target" => "#ToolsSLider"}
+					%img.margin-bottom{:src=>"../images/tool-icon-launch.svg", :width=>"73px"}
+					%p.body-small
+						Link
+						%br
+						launcher
