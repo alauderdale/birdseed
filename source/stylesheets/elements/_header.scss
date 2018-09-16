@@ -2,8 +2,9 @@
 	background:white;
 	padding:21px 0;
 	box-shadow:0 2px 60px 0 rgba(50,83,63,0.31);
-	@include transition-duration(.2s);
+	@include transition-duration(.3s);
 	@include breakpoint(md) {
+		@include transition-duration(.1s);
 		.navbar-brand{
 			margin:0;
 			margin-left:15px;
