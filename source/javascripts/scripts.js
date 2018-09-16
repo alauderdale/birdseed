@@ -9,6 +9,18 @@ $(document).ready(function(){
     });
 
 
+
+	 $(window).scroll(function() {    
+	    var scroll = $(window).scrollTop();
+
+	    if (scroll >= 5) {
+	        $("#primary-nav").removeClass("navbar-page-top");
+	    } else {
+	        $("#primary-nav").addClass("navbar-page-top");
+	    }
+	});
+
+
 	// $('.tool-icon').click(function(){
 
 	//     $('.tool-icon').removeClass('active');

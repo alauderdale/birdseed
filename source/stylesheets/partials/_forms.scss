@@ -9,7 +9,8 @@
 //promo
 
 .primary-promo{
-	background:$primary-color url("../images/promo-bg.svg") bottom center no-repeat!important;
+	background:$primary-color url("../images/promo-bg.png") top center no-repeat!important;
+	background-size:100%!important;
 }
 
 //contact page

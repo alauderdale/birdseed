@@ -15,20 +15,38 @@
     .nav-item
       %a.nav-link{:href => "/blog"}
         News
-%nav.navbar.fixed-top.navbar-expand-sm#primary-nav
+%nav.navbar.fixed-top.navbar-expand-sm.navbar-page-top#primary-nav
   .container
     %a.navbar-brand{:href => "/"}
       %img{:width => "210px", :src => "/images/logo.svg"}
     .d-none.d-lg-inline.mr-auto
       .navbar-nav
-        .nav-item
-          %a.nav-link{:href => "/practice-areas"}
+        .nav-item.dropdown
+          %a.nav-link{:href => "#", :role=>"button", "data-toggle"=>"dropdown"}
             Tour
+            %i.material-icons
+              keyboard_arrow_down
+          .dropdown-menu
+            %a.dropdown-item{:href => "#"}
+              Why BirdSeed?
+            %a.dropdown-item{:href => "#"}
+              Included tools
+            %a.dropdown-item{:href => "#"}
+              How it works
+        .nav-item.dropdown
+          %a.nav-link{:href => "#", :role=>"button", "data-toggle"=>"dropdown"}
+            About
+            %i.material-icons
+              keyboard_arrow_down
+          .dropdown-menu
+            %a.dropdown-item{:href => "#"}
+              Our story
+            %a.dropdown-item{:href => "#"}
+              Why the name?
+            %a.dropdown-item{:href => "#"}
+              Partner
         .nav-item
-          %a.nav-link{:href => "/about"}
-            About 
-        .nav-item
-          %a.nav-link{:href => "/team"}
+          %a.nav-link{:href => "/pricing"}
             Pricing
     %button.tcon.tcon-menu--xcross.menu-button.d-lg-none.toggle-menu-button{:type => "button"}
       %span.tcon-menu__lines{"aria-hidden" => "true"}
@@ -37,11 +55,11 @@
     .d-none.d-lg-inline.ml-auto
       .navbar-nav
         .nav-item
-          %a.nav-link{:href => "/practice-areas"}
+          %a.nav-link.sign-in{:href => "/practice-areas"}
             Sign in
     .navbar-nav.d-none.d-lg-inline.position-relative
       .form-inline
-        %a.btn.btn-primary.btn-lg.nav-link.contact-button{:href => "/contact"}
+        %a.btn.btn-primary.btn-lg.nav-link.create-account-button{:href => "/pricing"}
           Create free account
 
 

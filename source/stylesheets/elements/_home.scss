@@ -22,37 +22,32 @@
 
 
 
-#tools{
-
-}
 
 
 .tools-slider{
-
+	position:relative;
+	.tools-text{
+		position:absolute;
+		top:60px;
+		z-index:999;
+		width:100%;
+		color:white;
+	}
 	.carousel-inner{
 		margin:0 auto;
 		position:relative;
 		overflow:visible;
 		.carousel-item{
-			background: url("../images/bg-tools-accent-chat.svg") no-repeat top center;
+			background: url("../images/bg-tools-accent-primary.svg") no-repeat top center;
 			background-size:100%;
 			@include transition-duration(.4s);
-			padding-top:100px;
-		}
-		#item-call{
-			background: url("../images/bg-tools-accent-call.svg") no-repeat top center;
-			background-size:100%;
-			.carousel-caption{
-				p{
-					background:$accent-two;
-				}
-			}
+			padding-top:180px;
 		}
 		.carousel-caption{
 			bottom:135px;
 			p{
 				padding:5px 20px;
-				background:$accent-one;
+				background:$primary-color;
 				border-radius:100px;
 				text-align:center;
 				display:inline-flex;
@@ -67,34 +62,72 @@
 			margin:0 auto;
 		}
 	}
-}
 
-.tools-controls{
 
-}
-
-.carousel-indicators, .tool-slider-indicators{
-	position:absolute;
-	width:100%;
-	margin:0 auto;
-	bottom:0;
-}
-
-.tool-icon{
-	text-align:center;
-	cursor:pointer;
-	@include transition-duration(.2s);
-	img{
-		@include transition-duration(.2s);
-		opacity:.8;
+	.carousel-indicators, .tool-slider-indicators{
+		position:absolute;
+		width:100%;
+		margin:0 auto;
+		bottom:0;
 	}
-	&:hover, &.active{
-		color:red;
+
+	.tool-icon{
+		text-align:center;
+		cursor:pointer;
+		@include transition-duration(.2s);
 		img{
-			opacity:1;
+			@include transition-duration(.2s);
+			opacity:.8;
+		}
+		&:hover, &.active{
+			color:red;
+			img{
+				opacity:1;
+			}
 		}
 	}
 }
+
+#howSlider{
+	padding-top:$baseline;
+	.carousel-item{
+		width:100%;
+		img{
+			width:100%;
+			max-width:580px;
+		}
+		
+	}
+	.carousel-indicators{
+		position:relative;
+		width:100%;
+		bottom:0;
+		margin:0;
+		padding:0;
+		display:inline-block;
+		padding:20px;
+		@include transition-duration(.2s);
+		.how-indicator{
+			width:100%;
+			padding:10px 20px;
+			margin-bottom:$baseline;
+			cursor:pointer;
+			@include transition-duration(.2s);
+			p{
+				margin:0;
+			}
+			&.active{
+				margin-left:-20px;
+			}
+			&.active, &:hover{
+				background:$tertiary-color;
+				color:white;
+			}
+		}
+	}
+}
+
+
 
 
 
