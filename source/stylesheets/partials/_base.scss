@@ -108,6 +108,12 @@ img{
   background:$primary-color;
 }
 
-.off-white-bg-color{
-  background:$off-white-color;
+.primary-light-bg-color{
+  background:$primary-light-color;
 }
+
+.off-white-bg-color{
+  background:$off-white-color!important;
+}
+
+

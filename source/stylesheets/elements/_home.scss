@@ -1,6 +1,49 @@
 .main-hero{
 	padding-top:$baseline*10;
 	background: url("../images/main-header-bg.svg") no-repeat top right;
+	img{
+		position:relative;
+		top:-20px;
+	}
+	@include breakpoint(lg) {
+		background-position-x:550px;
+		img{
+			width:440px;
+			top:0px;
+		}
+	}
+	@include breakpoint(md) {
+		background-position-x:400px;
+		img{
+			width:420px;
+			left:10px;
+		}
+		.btn{
+			margin:0!important;
+			margin-bottom:$baseline!important;
+		}
+	}
+
+	@include breakpoint(sm) {
+		padding-top:$baseline*8;
+		padding-bottom:none;
+		text-align:center;
+		background-image:none;
+		img{
+			margin-top:$baseline*2;
+			max-width:100%;
+		}
+		.btn{
+			width:100%;
+		}
+	}
+}
+
+#why{
+	padding-top:$baseline*2;
+	@include breakpoint(sm) {
+		padding-top:0;
+	}
 }
 
 .why-cards{
@@ -22,7 +65,11 @@
 
 
 
-
+#tools{
+	@include breakpoint(sm) {
+		padding-top:0;
+	}
+}
 
 .tools-slider{
 	position:relative;
@@ -44,7 +91,10 @@
 			padding-top:180px;
 		}
 		.carousel-caption{
-			bottom:135px;
+			bottom:120px;
+			@include breakpoint(md) {
+				bottom:230px;
+			}
 			p{
 				padding:5px 20px;
 				background:$primary-color;
@@ -56,10 +106,14 @@
 		}
 		.img-container{
 			position:relative;
-			padding-bottom:220px;
+			padding-bottom:210px;
 			max-width:320px;
 			text-align:center;
 			margin:0 auto;
+			@include breakpoint(md) {
+				padding-bottom:320px;
+				max-width:270px;
+			}
 		}
 	}
 
@@ -75,14 +129,21 @@
 		text-align:center;
 		cursor:pointer;
 		@include transition-duration(.2s);
+		color:$light-text-color;
 		img{
 			@include transition-duration(.2s);
 			opacity:.8;
+			margin-bottom:5px;
 		}
 		&:hover, &.active{
-			color:red;
+			color:$dark-text-color;
 			img{
 				opacity:1;
+			}
+		}
+		@include breakpoint(md) {
+			img{
+				width:60px;
 			}
 		}
 	}
@@ -91,10 +152,13 @@
 #howSlider{
 	padding-top:$baseline;
 	.carousel-item{
-		width:100%;
-		img{
-			width:100%;
-			max-width:580px;
+		.img-container{
+			img{
+				width:580px;
+				@include breakpoint(md) {
+					width:400px;
+				}
+			}
 		}
 		
 	}
@@ -122,6 +186,12 @@
 			&.active, &:hover{
 				background:$tertiary-color;
 				color:white;
+			}
+			@include breakpoint(md) {
+				padding:5px 10px;
+				p{
+					font-size:14px;
+				}
 			}
 		}
 	}

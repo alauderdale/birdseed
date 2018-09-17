@@ -1,9 +1,24 @@
 .form-control-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-append>.btn, .input-group-lg>.input-group-append>.input-group-text, .input-group-lg>.input-group-prepend>.btn, .input-group-lg>.input-group-prepend>.input-group-text{
 	border-radius:0px;
+	border-color:$border-color;
 }
 
 .form-control{
 
+}
+
+
+.form-control::-webkit-input-placeholder { color: #C2C5C8; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #C2C5C8; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #C2C5C8; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #C2C5C8; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #C2C5C8; }  /* Microsoft Edge */
+
+
+label{
+	font-family:$regular-font-name;
+	font-size:14px;
+	font-weight:600;
 }
 
 //promo
@@ -13,22 +28,4 @@
 	background-size:100%!important;
 }
 
-//contact page
 
-.map{
-	position:relative;
-}
-
-.contact-detils-panel{
-	background:white;
-	padding:20px;
-	position:absolute;
-	bottom:-80px;
-	left:20px;
-	@include breakpoint(sm) {
-		position:relative;
-		padding:0;
-		bottom:0;
-		left:0;
-	}
-}

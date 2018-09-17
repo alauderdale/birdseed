@@ -170,6 +170,10 @@ h1{
   font-size:80px;
   line-height:96px;
   font-family:$regular-font-name;
+  @include breakpoint(md) {
+    font-size:55px;
+    line-height:60px;
+  }
   @include breakpoint(sm) {
     font-size:47px;
     line-height:50px;

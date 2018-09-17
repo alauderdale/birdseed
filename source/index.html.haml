@@ -1,19 +1,19 @@
-%section.no-padding-bottom.main-hero#intro
+%section.main-hero#intro
 	.container
 		.row
-			.col-xl-6.col-lg-8
+			.col-xl-6.col-lg-7.col-md-6
 				%h1.double-margin-bottom.bold-font
 					All-in-one website engagement
 				%p.body-large.light-text-color
 					Everything you need to fully engage MORE website visitors while they browse - All in one button
 				.double-margin-top
-					%a.btn.btn-lg.btn-primary.margin-right{:href=>"#"}
+					%a.btn.btn-lg.btn-primary.margin-right{:href=>"/pricing"}
 						Create free account
-					%a.btn.btn-lg.btn-outline-primary{:href=>"#"}
+					%a.btn.btn-lg.btn-light{:href=>"#"}
 						%i.material-icons
 							play_arrow
 						See it in action
-			.col-xl-6.col-lg-4
+			.col-xl-6.col-lg-5.col-md-6
 				%img.padded.no-padding-top{:src=>"../images/home-graphic.png", :width=>"545px"}
 %section#why
 	.container
@@ -56,10 +56,11 @@
 
 %section#tools
 	=partial('tools-slider')
+	=partial('tools-mobile')
 	.row
 		.col-lg-12
 			.text-center.double-margin-top
-				%a.btn.btn-lg.btn-primary.margin-right{:href=>"#"}
+				%a.btn.btn-lg.btn-primary.margin-right{:href=>"/pricing"}
 					Get started
 %section#how-it-works.off-white-bg-color
 	.container

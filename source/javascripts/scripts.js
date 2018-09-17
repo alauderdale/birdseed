@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
 
-	 $(window).scroll(function() {    
+	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
 
 	    if (scroll >= 5) {
@@ -19,6 +19,15 @@ $(document).ready(function(){
 	        $("#primary-nav").addClass("navbar-page-top");
 	    }
 	});
+
+
+	$(".hover-slider .carousel-indicators div").hover(function(){
+	  var goto = Number( $(this).attr('data-slide-to') );
+	  $("#ToolsSLider").carousel(goto);  
+	});
+
+
+
 
 
 	// $('.tool-icon').click(function(){

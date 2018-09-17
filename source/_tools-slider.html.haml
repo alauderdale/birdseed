@@ -1,5 +1,5 @@
 .d-none.d-lg-inline.d-md-inline
-	#ToolsSLider.carousel.slide.carousel-fade.tools-slider{"data-ride" => "carousel", "data-interval"=>"10000"}
+	#ToolsSLider.carousel.slide.carousel-fade.tools-slider.hover-slider{"data-ride" => "carousel", "data-interval"=>"6000"}
 		.text-center.tools-text
 			%h2.text-center.margin-bottom.bold-font
 				Powerful tools included
@@ -8,100 +8,100 @@
 		.carousel-inner
 			#item-chat.carousel-item.active{:style=>"background-image:url('../images/bg-tools-accent-chat.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-chat.png"}
+					%img.d-block.w-100{ :src => "../images/tool-preview-chat.png"}
 				.carousel-caption
 					%p{:style=>"background-color:#56E2C2;"}
 						Text Live Chat + Send Videos Real-time to your website visitors.
 			#item-call.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-call.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "Second slide", :src => "../images/tool-preview-call.png"}
+					%img.d-block.w-100{:src => "../images/tool-preview-call.png"}
 				.carousel-caption
 					%p{:style=>"background-color:#FF5071;"}
 						Create Personal Response Expectation for your company.
-			#item-idea.carousel-item
+			#item-idea.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-idea.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-idea.png"}
+					%img.d-block.w-100{ :src => "../images/tool-preview-idea.png"}
 				.carousel-caption
-					%p
+					%p{:style=>"background-color:#FBC329;"}
 						Create Personal Response Expectation for your company.
-			#item-event.carousel-item
+			#item-event.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-event.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-event.png"}
+					%img.d-block.w-100{ :src => "../images/tool-preview-event.png"}
 				.carousel-caption
-					%p
+					%p{:style=>"background-color:#FFBB5A;"}
 						Create Personal Response Expectation for your company.
-			#item-contact.carousel-item
+			#item-contact.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-contact.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-contact.png"}
+					%img.d-block.w-100{ :src => "../images/tool-preview-contact.png"}
 				.carousel-caption
-					%p
+					%p{:style=>"background-color:#9A7DFF;"}
 						Create Personal Response Expectation for your company.
-			#item-test.carousel-item
+			#item-test.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-test.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-test.png"}
+					%img.d-block.w-100{ :src => "../images/tool-preview-test.png"}
 				.carousel-caption
-					%p
+					%p{:style=>"background-color:#63CEFF;"}
 						Create Personal Response Expectation for your company.
-			#item-email.carousel-item
+			#item-email.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-email.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-email.png"}
+					%img.d-block.w-100{:src => "../images/tool-preview-email.png"}
 				.carousel-caption
-					%p
+					%p{:style=>"background-color:#5BA7FF;"}
 						Create Personal Response Expectation for your company.
-			#item-launch.carousel-item
+			#item-launch.carousel-item{:style=>"background-image:url('../images/bg-tools-accent-launch.svg');"}
 				.img-container
-					%img.d-block.w-100{:alt => "First slide", :src => "../images/tool-preview-launch.png"}
+					%img.d-block.w-100{:src => "../images/tool-preview-launch.png"}
 				.carousel-caption
-					%p
+					%p{:style=>"background-color:#8E8E93;"}
 						Create Personal Response Expectation for your company.
 		.container
 			.row.justify-content-center
 				.col-lg-12
 					.carousel-indicators.tool-slider-indicators.row
-						.tool-icon.tool-icon-chat.col-md.active{"data-slide-to" => "0", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-chat.svg", :width=>"73px"}
+						.tool-icon.tool-icon-chat.col-lg.col-md-2.active{"data-slide-to" => "0", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-chat.svg", :width=>"73px"}
 							%p.body-small
 								Live
 								%br
 								chat
-						.tool-icon.tool-icon-call.col-md{"data-slide-to" => "1", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-call.svg", :width=>"73px"}
+						.tool-icon.tool-icon-call.col-lg.col-md-2{"data-slide-to" => "1", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-call.svg", :width=>"73px"}
 							%p.body-small
 								Phone 
 								%br
 								call
-						.tool-icon.tool-icon-idea.col-md{"data-slide-to" => "2", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-idea.svg", :width=>"73px"}
+						.tool-icon.tool-icon-idea.col-lg.col-md-2{"data-slide-to" => "2", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-idea.svg", :width=>"73px"}
 							%p.body-small
 								Knowledge
 								%br
 								library
-						.tool-icon.tool-icon-event.col-md{"data-slide-to" => "3", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-event.svg", :width=>"73px"}
+						.tool-icon.tool-icon-event.col-lg.col-md-2{"data-slide-to" => "3", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-event.svg", :width=>"73px"}
 							%p.body-small
 								Schedule
 								%br
 								event
-						.tool-icon.tool-icon-contact.col-md{"data-slide-to" => "4", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-contact.svg", :width=>"73px"}
+						.tool-icon.tool-icon-contact.col-lg.col-md-2{"data-slide-to" => "4", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-contact.svg", :width=>"73px"}
 							%p.body-small
 								Contact
 								%br
 								form
-						.tool-icon.tool-icon-test.col-md{"data-slide-to" => "5", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-test.svg", :width=>"73px"}
+						.tool-icon.tool-icon-test.col-lg.col-md-2{"data-slide-to" => "5", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-test.svg", :width=>"73px"}
 							%p.body-small
 								Client
 								%br
 								testimonials
-						.tool-icon.tool-icon-email.col-md{"data-slide-to" => "6", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-email.svg", :width=>"73px"}
+						.tool-icon.tool-icon-email.col-lg.col-md-2{"data-slide-to" => "6", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-email.svg", :width=>"73px"}
 							%p.body-small
 								Email
 								%br
 								capture
-						.tool-icon.tool-icon-launch.col-md{"data-slide-to" => "7", "data-target" => "#ToolsSLider"}
-							%img.margin-bottom{:src=>"../images/tool-icon-launch.svg", :width=>"73px"}
+						.tool-icon.tool-icon-launch.col-lg.col-md-2{"data-slide-to" => "7", "data-target" => "#ToolsSLider"}
+							%img{:src=>"../images/tool-icon-launch.svg", :width=>"73px"}
 							%p.body-small
 								Link
 								%br

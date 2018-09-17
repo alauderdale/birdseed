@@ -4,13 +4,13 @@
 	box-shadow:0 2px 60px 0 rgba(50,83,63,0.31);
 	@include transition-duration(.3s);
 	@include breakpoint(md) {
-		@include transition-duration(.1s);
+		padding:10px 15px;
+		@include transition-duration(0s);
 		.navbar-brand{
 			margin:0;
-			margin-left:15px;
-		}
-		.toggle-menu-button{
-			margin-right:15px;
+			img{
+				width:150px;
+			}
 		}
 	}
 	.contact-button{
@@ -103,14 +103,13 @@ html{
 
 .toggle-menu-button{
 	position:relative;
-	top:4px;
 }
 
 .mobile-menu{
 	width: 100%;
     position: fixed;
     height: 100%;
-    background: $primary-color;
+    background: $secondary-color;
     top: 0;
     z-index: 999;
     visibility:hidden;
@@ -125,7 +124,7 @@ html{
     	color:rgba(255,255,255,.8);
     }
     a{
-    	color:white;
+    	color:$primary-color;
     }
     .navbar-nav{
     	.btn{
@@ -139,9 +138,9 @@ html{
     		font-size:42px;
     		margin-bottom:30px;
     		a{
-    			color:white;
+    			color:$primary-color;
     			&:hover{
-    				color:tint($primary-color,50%);
+    				color:white!important;
     			}
     		}
     	}

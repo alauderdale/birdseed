@@ -24,3 +24,33 @@ $base-blog-line-height: 21pt;
 		}
 	}
 }
+
+
+
+#blog-featured{
+	.blog-thumb{
+		padding:$baseline;
+		margin-bottom:$baseline*2;
+		@include breakpoint(md) {
+			padding:0;
+			padding-bottom:$baseline*2;
+			text-align:center;
+			.btn{
+				text-align:center!important;
+			}
+			p{
+				font-size:18px;
+				line-height:24px;
+			}
+		}
+		a{
+			p{
+				color:$text-color;
+				@include transition-duration(.2s);
+				&:hover{
+					color:$link-color;
+				}
+			}
+		}
+	}
+}
