@@ -98,3 +98,11 @@ ul.pagination{
 		}
 	}
 }
+
+
+:target:before {
+content:"";
+display:block;
+height:240px; /* fixed header height*/
+margin:-240px 0 0; /* negative fixed header height */
+}

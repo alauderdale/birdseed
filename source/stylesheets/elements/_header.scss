@@ -1,7 +1,13 @@
 #primary-nav{
 	background:white;
-	padding:21px 0;
+	padding:17px 0;
 	box-shadow:0 2px 60px 0 rgba(50,83,63,0.31);
+	.navbar-nav .dropdown:hover > .dropdown-menu {
+	    display: block;    
+	}
+	.nav-item .dropdown-menu{
+		top:30px;
+	}
 	@include transition-duration(.3s);
 	@include breakpoint(md) {
 		padding:10px 15px;

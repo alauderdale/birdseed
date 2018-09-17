@@ -39,8 +39,11 @@
 	}
 }
 
+#intro{
+	padding-bottom:$baseline*2;
+}
+
 #why{
-	padding-top:$baseline*2;
 	@include breakpoint(sm) {
 		padding-top:0;
 	}
