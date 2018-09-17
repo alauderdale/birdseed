@@ -156,13 +156,15 @@
 	padding-top:$baseline;
 	.carousel-item{
 		.img-container{
+			text-align:center;
+			width:100%;
 			img{
 				width:580px;
 				@include breakpoint(md) {
 					width:400px;
 				}
 				@include breakpoint(sm) {
-					width:100%;
+					width:300px;
 				}
 			}
 		}
