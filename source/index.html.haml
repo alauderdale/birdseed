@@ -57,11 +57,12 @@
 %section#tools
 	=partial('tools-slider')
 	=partial('tools-mobile')
-	.row
-		.col-lg-12
-			.text-center.double-margin-top
-				%a.btn.btn-lg.btn-primary{:href=>"/pricing"}
-					Get started
+	.container
+		.row
+			.col-lg-12
+				.text-center.double-margin-top
+					%a.btn.btn-lg.btn-primary{:href=>"/pricing"}
+						Get started
 %section#how-it-works.off-white-bg-color
 	.container
 		.row.justify-content-center
@@ -73,7 +74,7 @@
 	.container
 		.row
 			.col-lg-12
-				/ =partial('how-slider')
+				=partial('how-slider')
 
 
 
