@@ -156,16 +156,19 @@
 	padding-top:$baseline;
 	.carousel-item{
 		.img-container{
-			text-align:center;
-			img{
+				text-align:center;
 				width:580px;
+				margin:0 auto;
 				@include breakpoint(md) {
-					width:400px;
+					width:420px;
 				}
 				@include breakpoint(sm) {
-					width:100%;
+					width:320px;
 				}
-			}
+				img{
+					max-width:100%;
+				}
+
 		}
 		
 	}
