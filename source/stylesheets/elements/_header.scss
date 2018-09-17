@@ -115,7 +115,7 @@ html{
 	width: 100%;
     position: fixed;
     height: 100%;
-    background: $secondary-color;
+    background: $primary-color;
     top: 0;
     z-index: 999;
     visibility:hidden;
@@ -130,7 +130,7 @@ html{
     	color:rgba(255,255,255,.8);
     }
     a{
-    	color:$primary-color;
+    	color:white;
     }
     .navbar-nav{
     	.btn{
@@ -144,9 +144,9 @@ html{
     		font-size:42px;
     		margin-bottom:30px;
     		a{
-    			color:$primary-color;
+    			color:white;
     			&:hover{
-    				color:white!important;
+    				color:rgba(255,255,255,.8)!important;
     			}
     		}
     	}
