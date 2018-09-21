@@ -6,55 +6,86 @@
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <meta content='' name='description'>
 <title>
-SPR
+Fuel for your website | Birdseed
 </title>
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 <link href="stylesheets/style.css" rel="stylesheet" />
 <link href='images/favicon.ico' rel='shortcut icon'>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script><script src="bower_components/node_modules/bootstrap/dist/js/bootstrap.min.js"></script><script src="javascripts/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="bower_components/node_modules/bootstrap/dist/js/bootstrap.min.js"></script><script src="javascripts/scripts.js"></script>
 
 <body class='index' data-offset='80' data-spy='scroll' data-target='#primary-nav'>
 <div class='mobile-menu d-lg-none'>
 <div class='navbar-nav mx-auto'>
-<a class='btn btn-outline-light btn-lg double-margin-bottom' href='/contact'>
-Request a consultation
-</a>
 <div class='nav-item'>
-<a class='nav-link' href='/practice-areas'>
-Practice areas
+<a class='nav-link' href='/'>
+Tour
 </a>
 </div>
 <div class='nav-item'>
 <a class='nav-link' href='/about'>
-About us
+About
 </a>
 </div>
 <div class='nav-item'>
-<a class='nav-link' href='/team'>
-Attorneys
+<a class='nav-link' href='/pricing'>
+Pricing
 </a>
 </div>
-<div class='nav-item'>
-<a class='nav-link' href='/resources'>
-Resources
-</a>
-</div>
-<div class='nav-item'>
-<a class='nav-link' href='/blog'>
-News
-</a>
-</div>
-<p class='text-center white-text-color call-us'>
-(303)-123-4567
-</p>
 </div>
 </div>
-<nav class='navbar fixed-top navbar-expand-sm' id='primary-nav'>
+<nav class='navbar fixed-top navbar-expand-sm navbar-page-top' id='primary-nav'>
 <div class='container'>
 <a class='navbar-brand' href='/'>
-<img src='images/logo.png' width='231px'>
+<img src='images/logo.svg' width='210px'>
 </a>
+<div class='d-none d-lg-inline mr-auto'>
+<div class='navbar-nav'>
+<div class='nav-item dropdown'>
+<a class='nav-link' data-toggle='dropdown' href='#' role='button'>
+Tour
+<i class='material-icons'>
+keyboard_arrow_down
+</i>
+</a>
+<div class='dropdown-menu'>
+<a class='dropdown-item' href='/#why'>
+Why BirdSeed?
+</a>
+<a class='dropdown-item' href='/#tools'>
+Included tools
+</a>
+<a class='dropdown-item' href='/#how-it-works'>
+How it works
+</a>
+</div>
+</div>
+<div class='nav-item dropdown'>
+<a class='nav-link' data-toggle='dropdown' href='#' role='button'>
+About
+<i class='material-icons'>
+keyboard_arrow_down
+</i>
+</a>
+<div class='dropdown-menu'>
+<a class='dropdown-item' href='/about/#story'>
+Our story
+</a>
+<a class='dropdown-item' href='/about/#name'>
+Why the name?
+</a>
+<a class='dropdown-item' href='/about/#partner'>
+Partner
+</a>
+</div>
+</div>
+<div class='nav-item'>
+<a class='nav-link' href='/pricing'>
+Pricing
+</a>
+</div>
+</div>
+</div>
 <button class='tcon tcon-menu--xcross menu-button d-lg-none toggle-menu-button' type='button'>
 <span aria-hidden='true' class='tcon-menu__lines'></span>
 <span class='tcon-visuallyhidden'>
@@ -64,49 +95,16 @@ toggle menu
 <div class='d-none d-lg-inline ml-auto'>
 <div class='navbar-nav'>
 <div class='nav-item'>
-<a class='nav-link' href='/practice-areas'>
-Practice areas
-</a>
-</div>
-<div class='nav-item'>
-<a class='nav-link' href='/about'>
-About us
-</a>
-</div>
-<div class='nav-item'>
-<a class='nav-link' href='/team'>
-Attorneys
-</a>
-</div>
-<div class='nav-item'>
-<a class='nav-link' href='/resources'>
-Resources
-</a>
-</div>
-<div class='nav-item'>
-<a class='nav-link' href='/blog'>
-News
+<a class='nav-link sign-in' href='/practice-areas'>
+Sign in
 </a>
 </div>
 </div>
 </div>
 <div class='navbar-nav d-none d-lg-inline position-relative'>
-<div class='call-us'>
-<h6 class='no-margin-bottom'>
-<i class='material-icons'>
-phone
-</i>
-<span class='spaced'>
-CALL US
-</span>
-<span class='bold-font'>
-303.830.7090
-</span>
-</h6>
-</div>
 <div class='form-inline'>
-<a class='btn btn-outline-primary btn-lg nav-link contact-button' href='/contact'>
-Request a consultation
+<a class='btn btn-primary btn-lg nav-link create-account-button' href='/pricing'>
+Create free account
 </a>
 </div>
 </div>
@@ -115,277 +113,463 @@ Request a consultation
 
 <!-- end menu -->
 <div id='main'>
-<section class='inverse-section home-hero mark-effect' style='background-image:url(../images/home-hero-bg.png);'>
+<section class='main-hero' id='intro'>
 <div class='container'>
 <div class='row'>
-<div class='col-xl-6 col-lg-8'>
-<h4 class='medium-font line-above position-relative'>
-Welcome
-</h4>
-<h1 class='margin-bottom bold-font'>
-World Class Counsel When it Counts
+<div class='col-xl-6 col-lg-7 col-md-6'>
+<h1 class='double-margin-bottom bold-font'>
+All-in-one website engagement
 </h1>
-<h3>
-Serving Denver, Boulder, Greeley, Colorado Springs, Fort Collins and all of Colorado.
-</h3>
-<a class='btn btn-lg btn-outline-light double-margin-top' href='#'>
-Request a consultation
+<p class='body-large light-text-color'>
+Everything you need to fully engage MORE website visitors while they browse - All in one button
+</p>
+<div class='double-margin-top'>
+<a class='btn btn-lg btn-primary margin-right' href='/pricing'>
+Create free account
 </a>
+<a class='btn btn-lg btn-light' href='#'>
+<i class='material-icons'>
+play_arrow
+</i>
+See it in action
+</a>
+</div>
+</div>
+<div class='col-xl-6 col-lg-5 col-md-6'>
+<img class='padded no-padding-top' src='../images/home-graphic.png' width='545px'>
 </div>
 </div>
 </div>
 </section>
-<section class='no-padding-bottom'>
+<section class='anchor' id='why'>
 <div class='container'>
-<div class='row justify-content-md-center'>
-<div class='col-lg-8'>
-<h4 class='bold-font text-center'>
-How can we help?
-</h4>
-<h2 class='text-center'>
-We’re committed to fairly practicing the law. Our expertise extends to several areas, including:
-</h2>
-</div>
-</div>
-<div class='industry-cards'>
 <div class='row'>
 <div class='col-lg-12'>
-<div class='card-deck'>
-<div class='card service-card position-relative double-padding-top'>
-<div class='card-icon'>
-<img src='../images/card-icon-special.svg'>
-</div>
-<div class='card-body'>
-<h4 class='card-title bold-font'>
-Special education law
-</h4>
-<p class='card-text light-text-color'>
-magnam veniam labore consectetur voluptates qui ut quo vero dolor
-</p>
-</div>
-<div class='card-footer'>
-<a class='card-link' href='#'>
-Learn more
-</a>
-</div>
-</div>
-<div class='card service-card position-relative double-padding-top'>
-<div class='card-icon'>
-<img src='../images/card-icon-special.svg'>
-</div>
-<div class='card-body'>
-<h4 class='card-title bold-font'>
-Special education law
-</h4>
-<p class='card-text light-text-color'>
-esse nihil deleniti et qui asperiores ea minima ut sunt
-</p>
-</div>
-<div class='card-footer'>
-<a class='card-link' href='#'>
-Learn more
-</a>
-</div>
-</div>
-<div class='card service-card position-relative double-padding-top'>
-<div class='card-icon'>
-<img src='../images/card-icon-special.svg'>
-</div>
-<div class='card-body'>
-<h4 class='card-title bold-font'>
-Special education law
-</h4>
-<p class='card-text light-text-color'>
-perferendis excepturi et exercitationem veritatis dolores rerum a quas impedit
-</p>
-</div>
-<div class='card-footer'>
-<a class='card-link' href='#'>
-Learn more
-</a>
-</div>
-</div>
-</div>
-<div class='text-center double-margin-top double-padding-top'>
-<a class='btn btn-lg btn-dark' href='/practice-areas'>
-View all practice areas
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<img class='full-width' src='../images/people-bg-top.svg'>
-<section class='home-people no-padding-top no-padding-bottom'>
-<div class='container'>
-<div class='row justify-content-md-center double-margin-bottom'>
-<div class='col-lg-8'>
-<h4 class='bold-font text-center'>
-Our legal team
-</h4>
-<h2 class='text-center'>
-Aliquam vehicula dictum diam, at ornare sem condimentum ut.
+<h2 class='text-center margin-bottom'>
+Why you need
+<span class='bold-font'>
+more
+</span>
+than just live chat
 </h2>
+<div class='row justify-content-center'>
+<div class='col-lg-6'>
+<p class='text-center body-large light-text-color'>
+Once you realize how many different tools are needed to engage more of your website visitors.
+</p>
 </div>
 </div>
-<div class='people-cards'>
+</div>
+</div>
+<div class='row double-margin-top why-cards'>
+<div class='col-md-4'>
+<div class='card elevation-2'>
+<div class='card-body text-center'>
+<img class='margin-bottom' src='../images/icon-early.svg' width='100px'>
+<p class='body-large bold-font regular-font-name'>
+Early stage
+</p>
+<p class='light-text-color'>
+Based on their stage in the sales cycle AND for all the times outside of regular business hours when you aren’t able to respond real-time!
+</p>
+</div>
+</div>
+</div>
+<div class='col-md-4'>
+<div class='card elevation-2'>
+<div class='card-body text-center'>
+<img class='margin-bottom' src='../images/icon-real-time.svg' width='100px'>
+<p class='body-large bold-font regular-font-name'>
+Real time avalibility
+</p>
+<p class='light-text-color'>
+Once you realize how many different tools are needed to engage more of your website visitors, it can be daunting to figure out where to place them
+</p>
+</div>
+</div>
+</div>
+<div class='col-md-4'>
+<div class='card elevation-2'>
+<div class='card-body text-center'>
+<img class='margin-bottom' src='../images/icon-personal.svg' width='100px'>
+<p class='body-large bold-font regular-font-name'>
+Personal preference
+</p>
+<p class='light-text-color'>
+That is why we include all of them in one simple button, which can be customized based on your hours of operations.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id='tools'>
+<div class='d-none d-lg-inline d-md-inline'>
+<div class='carousel slide carousel-fade tools-slider hover-slider' data-interval='6000' data-ride='carousel' id='ToolsSLider'>
+<div class='text-center tools-text'>
+<h2 class='text-center margin-bottom bold-font'>
+Powerful tools included
+</h2>
+<p>
+I'm text explaining that you'll get amazing things
+</p>
+</div>
+<div class='carousel-inner'>
+<div class='carousel-item active' id='item-chat' style='background-image:url(&#39;../images/bg-tools-accent-chat.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-chat.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#56E2C2;'>
+Text Live Chat + Send Videos Real-time to your website visitors.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-call' style='background-image:url(&#39;../images/bg-tools-accent-call.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-call.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#FF5071;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-idea' style='background-image:url(&#39;../images/bg-tools-accent-idea.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-idea.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#FBC329;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-event' style='background-image:url(&#39;../images/bg-tools-accent-event.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-event.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#FFBB5A;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-contact' style='background-image:url(&#39;../images/bg-tools-accent-contact.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-contact.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#9A7DFF;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-test' style='background-image:url(&#39;../images/bg-tools-accent-test.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-test.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#63CEFF;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-email' style='background-image:url(&#39;../images/bg-tools-accent-email.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-email.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#5BA7FF;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+<div class='carousel-item' id='item-launch' style='background-image:url(&#39;../images/bg-tools-accent-launch.svg&#39;);'>
+<div class='img-container'>
+<img class='d-block w-100' src='../images/tool-preview-launch.png'>
+</div>
+<div class='carousel-caption'>
+<p style='background-color:#8E8E93;'>
+Create Personal Response Expectation for your company.
+</p>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='row justify-content-center'>
+<div class='col-lg-12'>
+<div class='carousel-indicators tool-slider-indicators row'>
+<div class='tool-icon tool-icon-chat col-lg col-md-2 active' data-slide-to='0' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-chat.svg' width='73px'>
+<p class='body-small'>
+Live
+<br>
+chat
+</p>
+</div>
+<div class='tool-icon tool-icon-call col-lg col-md-2' data-slide-to='1' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-call.svg' width='73px'>
+<p class='body-small'>
+Phone
+<br>
+call
+</p>
+</div>
+<div class='tool-icon tool-icon-idea col-lg col-md-2' data-slide-to='2' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-idea.svg' width='73px'>
+<p class='body-small'>
+Knowledge
+<br>
+library
+</p>
+</div>
+<div class='tool-icon tool-icon-event col-lg col-md-2' data-slide-to='3' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-event.svg' width='73px'>
+<p class='body-small'>
+Schedule
+<br>
+event
+</p>
+</div>
+<div class='tool-icon tool-icon-contact col-lg col-md-2' data-slide-to='4' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-contact.svg' width='73px'>
+<p class='body-small'>
+Contact
+<br>
+form
+</p>
+</div>
+<div class='tool-icon tool-icon-test col-lg col-md-2' data-slide-to='5' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-test.svg' width='73px'>
+<p class='body-small'>
+Client
+<br>
+testimonials
+</p>
+</div>
+<div class='tool-icon tool-icon-email col-lg col-md-2' data-slide-to='6' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-email.svg' width='73px'>
+<p class='body-small'>
+Email
+<br>
+capture
+</p>
+</div>
+<div class='tool-icon tool-icon-launch col-lg col-md-2' data-slide-to='7' data-target='#ToolsSLider'>
+<img src='../images/tool-icon-launch.svg' width='73px'>
+<p class='body-small'>
+Link
+<br>
+launcher
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='d-md-none'>
+<div class='container'>
 <div class='row'>
-<div class='col-lg-4 col-md-6'>
-<a href='/styles'>
-<div class='card person-card position-relative card-grid-card shadowed-card-link'>
-<div class='card-body'>
-<img class='double-margin-bottom' src='../images/people/thumb-jan.png' width='153px'>
-<h3 class='card-title text-color'>
-Janet R. Spies
-</h3>
-<h5 class='card-subtitle light-text-color half-margin-bottom'>
-Partner
-</h5>
-<i class='material-icons mail-link' onclick='document.location.href = &#39;mailto:john@doe.com&#39;; return false'>
-email
-</i>
-<h5 class='card-text light-text-color'>
-iure quas sit iusto sit beatae culpa in modi sint a deserunt ipsa molestiae ut est et consequatur
-</h5>
+<div class='col-sm'>
+<div class='text-center double-margin-bottom'>
+<h2 class='text-center margin-bottom bold-font'>
+Powerful tools included
+</h2>
+<p class='light-text-color body-large'>
+I'm text explaining that you'll get amazing things
+</p>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-chat.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Chat
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-chat.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-call.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Phone call
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-call.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-idea.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Knowledge library
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-idea.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-event.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Schedule event
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-event.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-contact.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Contact form
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-contact.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-test.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Client testimonials
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-test.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-email.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Email capture
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-email.png' width='300px'>
+</div>
+<div class='tool-thumbnail text-center double-margin-bottom'>
+<img class='margin-bottom' src='../images/tool-icon-launch.svg' width='73px'>
+<p class='regular-font-name no-margin-bottom bold-font'>
+Link launcher
+</p>
+<p class='light-text-color'>
+Create Personal Response Expectation for your company.
+</p>
+<img class='d-block max-width margin-auto' src='../images/tool-preview-launch.png' width='300px'>
 </div>
 </div>
-</a>
-</div>
-<div class='col-lg-4 col-md-6'>
-<a href='/styles'>
-<div class='card person-card position-relative card-grid-card shadowed-card-link'>
-<div class='card-body'>
-<img class='double-margin-bottom' src='../images/people/thumb-brendon.png' width='153px'>
-<h3 class='card-title text-color'>
-Brendan O. Powers
-</h3>
-<h5 class='card-subtitle light-text-color half-margin-bottom'>
-Partner
-</h5>
-<i class='material-icons mail-link' onclick='document.location.href = &#39;mailto:john@doe.com&#39;; return false'>
-email
-</i>
-<h5 class='card-text light-text-color'>
-itaque et perspiciatis velit occaecati corporis voluptas maxime expedita amet ex vel autem sit voluptatem qui totam in
-</h5>
 </div>
 </div>
-</a>
 </div>
-<div class='col-lg-4 col-md-6'>
-<a href='/styles'>
-<div class='card person-card position-relative card-grid-card shadowed-card-link'>
-<div class='card-body'>
-<img class='double-margin-bottom' src='../images/people/thumb-jack.png' width='153px'>
-<h3 class='card-title text-color'>
-Jack D. Robinson
-</h3>
-<h5 class='card-subtitle light-text-color half-margin-bottom'>
-Partner
-</h5>
-<i class='material-icons mail-link' onclick='document.location.href = &#39;mailto:john@doe.com&#39;; return false'>
-email
-</i>
-<h5 class='card-text light-text-color'>
-assumenda illo ab atque necessitatibus perspiciatis nesciunt quibusdam qui rerum beatae nulla quisquam ad et voluptates debitis magnam
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class='col-lg-4 col-md-6'>
-<a href='/styles'>
-<div class='card person-card position-relative card-grid-card shadowed-card-link'>
-<div class='card-body'>
-<img class='double-margin-bottom' src='../images/people/thumb-4.png' width='153px'>
-<h3 class='card-title text-color'>
-Priscilla Tomescu
-</h3>
-<h5 class='card-subtitle light-text-color half-margin-bottom'>
-Associate
-</h5>
-<i class='material-icons mail-link' onclick='document.location.href = &#39;mailto:john@doe.com&#39;; return false'>
-email
-</i>
-<h5 class='card-text light-text-color'>
-qui maiores perferendis aut assumenda consequuntur labore ducimus ipsa autem modi velit mollitia a consequatur itaque quia doloremque
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class='col-lg-4 col-md-6'>
-<a href='/styles'>
-<div class='card person-card position-relative card-grid-card shadowed-card-link'>
-<div class='card-body'>
-<img class='double-margin-bottom' src='../images/people/thumb-5.png' width='153px'>
-<h3 class='card-title text-color'>
-Ursula Honigman
-</h3>
-<h5 class='card-subtitle light-text-color half-margin-bottom'>
-Associate
-</h5>
-<i class='material-icons mail-link' onclick='document.location.href = &#39;mailto:john@doe.com&#39;; return false'>
-email
-</i>
-<h5 class='card-text light-text-color'>
-magni dolorem ea iure dignissimos magnam nemo non aut iusto tempora expedita recusandae quo aut rerum et aspernatur
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class='col-lg-4 col-md-6'>
-<a href='/styles'>
-<div class='card person-card position-relative card-grid-card shadowed-card-link'>
-<div class='card-body'>
-<img class='double-margin-bottom' src='../images/people/thumb-6.png' width='153px'>
-<h3 class='card-title text-color'>
-First Last
-</h3>
-<h5 class='card-subtitle light-text-color half-margin-bottom'>
-Associate
-</h5>
-<i class='material-icons mail-link' onclick='document.location.href = &#39;mailto:john@doe.com&#39;; return false'>
-email
-</i>
-<h5 class='card-text light-text-color'>
-vel earum nobis animi consequatur libero esse facilis sapiente corporis est exercitationem laboriosam amet sequi incidunt consectetur et
-</h5>
-</div>
-</div>
+
+<div class='container'>
+<div class='row'>
+<div class='col-lg-12'>
+<div class='text-center double-margin-top'>
+<a class='btn btn-lg btn-primary' href='/pricing'>
+Get started
 </a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section>
+<section class='off-white-bg-color' id='how-it-works'>
+<div class='container'>
+<div class='row justify-content-center'>
+<div class='col-lg-6'>
+<h2 class='text-center bold-font'>
+How it works
+</h2>
+<p class='text-center body-large light-text-color'>
+Once you realize how many different tools are needed to engage more of your website visitors.
+</p>
+</div>
+</div>
+</div>
 <div class='container'>
 <div class='row'>
-<div class='col-md-6'>
-<img class='max-width' src='../images/home-img-1.png'>
+<div class='col-lg-12'>
+<div class='carousel slide carousel-fade how-slider' data-interval='6000' data-ride='carousel' id='howSlider'>
+<div class='carousel-inner'>
+<div class='row'>
+<div class='col-md-7'>
+<div class='carousel-item active'>
+<div class='img-container'>
+<img alt='First slide' src='../images/how-it-works-business-hours.png'>
 </div>
-<div class='col-md-1'>
-<div class='d-none d-md-inline'>
-<div class='border-flourish'></div>
+</div>
+<div class='carousel-item'>
+<div class='img-container'>
+<img alt='First slide' src='../images/how-it-works-business-hours.png'>
+</div>
+</div>
+<div class='carousel-item'>
+<div class='img-container'>
+<img alt='First slide' src='../images/how-it-works-business-hours.png'>
+</div>
+</div>
+<div class='carousel-item'>
+<div class='img-container'>
+<img alt='First slide' src='../images/how-it-works-business-hours.png'>
+</div>
+</div>
+<div class='carousel-item'>
+<div class='img-container'>
+<img alt='First slide' src='../images/how-it-works-business-hours.png'>
+</div>
+</div>
+<div class='carousel-item'>
+<div class='img-container'>
+<img alt='First slide' src='../images/how-it-works-business-hours.png'>
+</div>
 </div>
 </div>
 <div class='col-md-5'>
-<div class='double-margin-top'>
-<h2>
-Our promise
-</h2>
-<p>
-Aliquam vehicula dictum diam, at ornare sem condimentum ut. Aenean blandit consectetur dui ut fermentum. Curabitur sodales orci eget odio.
+<div class='carousel-indicators how-slider-indicators'>
+<div class='elevation-2 card how-indicator active' data-slide-to='0' data-target='#howSlider'>
+<p class='body-large bold-font'>
+Show welcome message
 </p>
-<h3>
-<a class='link-underline' href='/about'>
-Learn more about us
-</a>
-</h3>
 </div>
+<div class='elevation-2 card how-indicator' data-slide-to='1' data-target='#howSlider'>
+<p class='body-large bold-font'>
+Set business hours
+</p>
+</div>
+<div class='elevation-2 card how-indicator' data-slide-to='2' data-target='#howSlider'>
+<p class='body-large bold-font'>
+Choose your tools
+</p>
+</div>
+<div class='elevation-2 card how-indicator' data-slide-to='3' data-target='#howSlider'>
+<p class='body-large bold-font'>
+Engage live chat
+</p>
+</div>
+<div class='elevation-2 card how-indicator' data-slide-to='4' data-target='#howSlider'>
+<p class='body-large bold-font'>
+Power up
+</p>
+</div>
+<div class='elevation-2 card how-indicator' data-slide-to='5' data-target='#howSlider'>
+<p class='body-large bold-font'>
+Download mobile app
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 </div>
 </div>
 </div>
@@ -393,20 +577,12 @@ Learn more about us
 <section class='inverse-section primary-promo'>
 <div class='container'>
 <div class='row'>
-<div class='col-md-8 col-lg-9'>
+<div class='col-md-12 text-center'>
 <h2 class='bold-font'>
-Ready to chat?
+Try BirdSeed for free
 </h2>
-<p class='double-margin-bottom'>
-Request your consoltation now. Or call us at
-<span class='bold-font'>
-303.830.7090
-</span>
-</p>
-</div>
-<div class='col-md-4 col-lg-3'>
-<a class='btn btn-lg btn-light margin-top btn-block' href='/contact'>
-Request a consultation
+<a class='btn btn-lg btn-light margin-top' href='/pricing'>
+Get started
 </a>
 </div>
 </div>
@@ -419,108 +595,124 @@ Request a consultation
 <footer id='primary-footer'>
 <div class='container'>
 <div class='row'>
-<div class='col-md-3'>
-<img class='half-margin-bottom' src='images/logo-icon.png' width='68px'>
-<h6 class='white-text-color'>
-© SPR 2018
-</h6>
+<div class='col-md-12'>
+<img class='half-margin-bottom' src='images/logo-white.svg' width='151px'>
+<hr>
 </div>
-<div class='col-md-2'>
-<h5 class='bold-font white-text-color'>
-Company
-</h5>
+</div>
+<div class='row margin-top'>
+<div class='col-md-9'>
+<div class='row'>
+<div class='col-md'>
+<p class='bold-font white-text-color'>
+Contact us
+</p>
 <ul class='list-unstyled footer-list'>
 <li>
-<a href='#'>
-Practice areas
+303.444.444.4444
+</li>
+<li>
+<a href='mailto:info@birdseedapp.com'>
+info@birdseedapp.com
+</a>
+</li>
+</ul>
+</div>
+<div class='col-md'>
+<p class='bold-font white-text-color'>
+Sitemap
+</p>
+<ul class='list-unstyled footer-list'>
+<li>
+<a href='/#tools'>
+Features
 </a>
 </li>
 <li>
-<a href='#'>
+<a href='/pricing'>
+Pricing
+</a>
+</li>
+<li>
+<a href='/about'>
 About
 </a>
 </li>
+</ul>
+</div>
+<div class='col-md'>
+<p class='bold-font white-text-color'>
+Product
+</p>
+<ul class='list-unstyled footer-list'>
 <li>
-<a href='#'>
-Attorneys
+<a href='/#why'>
+Why BirdSeed?
 </a>
 </li>
 <li>
-<a href='#'>
-Resources
+<a href='/#tools'>
+Tools
 </a>
 </li>
 <li>
-<a href='#'>
-News
+<a href='/#how-it-works'>
+How it Works
 </a>
 </li>
 </ul>
 </div>
-<div class='col-md-2'>
-<h5 class='bold-font white-text-color'>
-Company
-</h5>
+<div class='col-md'>
+<p class='bold-font white-text-color'>
+Legal
+</p>
 <ul class='list-unstyled footer-list'>
 <li>
 <a href='#'>
-Special education
+Terms
 </a>
 </li>
 <li>
 <a href='#'>
-Insurance
-</a>
-</li>
-<li>
-<a href='#'>
-Commercial
-</a>
-</li>
-<li>
-<a href='#'>
-Construction
-</a>
-</li>
-<li>
-<a href='#'>
-Employment
+Privacy
 </a>
 </li>
 </ul>
+</div>
+</div>
 </div>
 <div class='col-md-3'>
-<h5 class='bold-font white-text-color'>
-Visit
-</h5>
-<ul class='list-unstyled footer-list'>
-<li>
-Cherry Tower
+<div class='row'>
+<div class='col-md'>
+<p class='body-large bold-font white-text-color'>
+Proudly Built in
 <br>
-950 South Cherry Street, Suite 700
-<br>
-Denver, Colorado 80246
+Orlando, Florida
+</p>
+<ul class='list-inline social-font-name social-list'>
+<li class='list-inline-item'>
+<a href='#'>
+f
+</a>
 </li>
-</ul>
-</div>
-<div class='col-md-2'>
-<h5 class='bold-font white-text-color'>
-Contact us
-</h5>
-<ul class='list-unstyled footer-list'>
-<li>
-P 303.444.444.4444
+<li class='list-inline-item'>
+<a href='#'>
+i
+</a>
 </li>
-<li>
-F 303.555.555.5555
+<li class='list-inline-item'>
+<a href='#'>
+l
+</a>
 </li>
-<li>
-E
-<a href='mailto:john@doe.com'>
-hello@spr.com
+<li class='list-inline-item'>
+<a href='#'>
+x
 </a>
 </li>
 </ul>
+</div>
+</div>
 </div>
 </div>
 </div>

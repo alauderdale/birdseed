@@ -9,7 +9,7 @@
 				.double-margin-top
 					%a.btn.btn-lg.btn-primary.margin-right{:href=>"/pricing"}
 						Create free account
-					%a.btn.btn-lg.btn-light{:href=>"#"}
+					%button.btn.btn-lg.btn-light{ :type=>"button", "data-toggle"=>"modal","data-src"=>"https://www.youtube.com/embed/IP7uGKgJL8U", "data-target"=>"#homeVideoModal"}
 						%i.material-icons
 							play_arrow
 						See it in action
@@ -78,6 +78,14 @@
 
 
 
+#homeVideoModal.modal.fade.video-modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-body
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+				.embed-responsive.embed-responsive-16by9
+					%iframe#video.embed-responsive-item{:allowscriptaccess => "always", :src => "https://www.youtube.com/embed/IP7uGKgJL8U"} 
 
 
 
