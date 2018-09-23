@@ -54,3 +54,33 @@ $base-blog-line-height: 21pt;
 		}
 	}
 }
+
+
+#blog-index{
+	padding-top:$baseline*8;
+	.card-columns{
+		@include breakpoint(md) {
+				column-count:2;	
+		}
+		@include breakpoint(sm) {
+				column-count:1;	
+		}
+	}
+}
+
+
+	a.blog-thumb{
+		@include transition-duration(.2s);
+		margin-top:10px;
+		img{
+			overflow:visible;
+		}
+		p{
+			color:$light-text-color!important;
+		}
+		&:hover{
+			transform: translate(0,-10px);
+    		transition-delay: 0s !important;
+		}
+	}
+

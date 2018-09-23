@@ -1,41 +1,27 @@
-%section.double-padding-top
+%section#blog-index
 	.container
 		.row
-			.col-md-2
-			.col-md-8
-				%h1.double-margin-bottom.bold-font
-					News
-				-10.times do
-					.padding-bottom
-						%h4
-							AUGUST 30, 2018
-						%h2
-							%a{:href=>"/blog/show"}
-								=lorem.words(4)
-						%p
-							=lorem.paragraphs(1)
-						%a.btn.btn-dark{:href=>"/blog/show"}
-							Read article
-						.padding-top
-						%hr
-			.col-md-2
-		.row.double-padding-top
-			.col-lg-12
-				%nav{"aria-label" => "Page navigation example"}
-					%ul.pagination.justify-content-center
-						%li.page-item
-							%a.page-link{"aria-label" => "Previous", :href => "#"}
-								%span{"aria-hidden" => "true"}
-									«
-									Older posts 
-						%li.page-item
-							%a.page-link{"aria-label" => "Next", :href => "#"}
-								%span{"aria-hidden" => "true"} 
-									Newer posts
-									»
+			.col-md
+				.double-padding-bottom.text-center
+					%h1.double-margin-bottom.bold-font
+						BirdSpeak
+					%p.body-large.light-text-color
+						Collection of articles, videos, and resources made by BirdSeed.
 
+		.row.justify-content-center
+			.col-md-12
+				.card-columns
+					-1.times do
+						
+						%a.blog-thumb.card.elevation-2.double-margin-bottom{:href=>""}
+							%img.card-img-top{:src=>"../images/blog-img.png", :width=>"350px"}
+							.card-body
+								%h5.text-color
+									=lorem.words(8)
+								%p.light-text-color
+									=lorem.words(15)
+								.text-left
+									%button.btn.btn-link.no-padding-left.text-left{:type=>"button"}
+										Read more
 
-
-
-
-=partial("shared/promo")
+				

@@ -35,9 +35,9 @@ Pricing
 </div>
 </div>
 <nav class='navbar fixed-top navbar-expand-sm navbar-page-top' id='primary-nav'>
-<div class='container'>
+<div class='container-fluid'>
 <a class='navbar-brand' href='/'>
-<img src='images/logo.svg' width='210px'>
+<img src='images/logo.svg' width='190px'>
 </a>
 <div class='d-none d-lg-inline mr-auto'>
 <div class='navbar-nav'>
@@ -75,7 +75,10 @@ Our story
 Why the name?
 </a>
 <a class='dropdown-item' href='/about/#partner'>
-Partner
+Partner with us
+</a>
+<a class='dropdown-item' href='/about/#blog-featured'>
+Blog
 </a>
 </div>
 </div>
@@ -127,12 +130,12 @@ Everything you need to fully engage MORE website visitors while they browse - Al
 <a class='btn btn-lg btn-primary margin-right' href='/pricing'>
 Create free account
 </a>
-<a class='btn btn-lg btn-light' href='#'>
+<button class='btn btn-lg btn-light' data-src='https://www.youtube.com/embed/IP7uGKgJL8U' data-target='#homeVideoModal' data-toggle='modal' type='button'>
 <i class='material-icons'>
 play_arrow
 </i>
 See it in action
-</a>
+</button>
 </div>
 </div>
 <div class='col-xl-6 col-lg-5 col-md-6'>
@@ -574,6 +577,20 @@ Download mobile app
 </div>
 </div>
 </section>
+<div aria-hidden='true' aria-labelledby='exampleModalLabel' class='modal fade video-modal' id='homeVideoModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-body'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+<div class='embed-responsive embed-responsive-16by9'>
+<iframe allowscriptaccess='always' class='embed-responsive-item' id='video' src='https://www.youtube.com/embed/IP7uGKgJL8U'></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
 <section class='inverse-section primary-promo'>
 <div class='container'>
 <div class='row'>
@@ -620,29 +637,7 @@ info@birdseedapp.com
 </div>
 <div class='col-md'>
 <p class='bold-font white-text-color'>
-Sitemap
-</p>
-<ul class='list-unstyled footer-list'>
-<li>
-<a href='/#tools'>
-Features
-</a>
-</li>
-<li>
-<a href='/pricing'>
-Pricing
-</a>
-</li>
-<li>
-<a href='/about'>
-About
-</a>
-</li>
-</ul>
-</div>
-<div class='col-md'>
-<p class='bold-font white-text-color'>
-Product
+Tour
 </p>
 <ul class='list-unstyled footer-list'>
 <li>
@@ -652,12 +647,39 @@ Why BirdSeed?
 </li>
 <li>
 <a href='/#tools'>
-Tools
+Included tools
 </a>
 </li>
 <li>
 <a href='/#how-it-works'>
-How it Works
+How it works
+</a>
+</li>
+</ul>
+</div>
+<div class='col-md'>
+<p class='bold-font white-text-color'>
+About
+</p>
+<ul class='list-unstyled footer-list'>
+<li>
+<a href='/#story'>
+Our story
+</a>
+</li>
+<li>
+<a href='/#name'>
+Why the name?
+</a>
+</li>
+<li>
+<a href='/#partner'>
+Partner with us
+</a>
+</li>
+<li>
+<a href='/about/#blog-featured'>
+Blog
 </a>
 </li>
 </ul>
