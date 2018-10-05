@@ -17,7 +17,7 @@ ul.pricing-list{
 	width:100%;
 	li{
 		border-bottom:1px solid $border-color;
-		padding:$baseline 0;
+		padding:$baseline/2 0;
 		vertical-align: middle;
 		p{
 			margin-bottom:0;
@@ -33,6 +33,21 @@ ul.pricing-list{
 			border:none;
 		}
 	}
+}
+
+.pricing-card-deck{
+	@include breakpoint(sm) {
+		flex-direction:column;
+		.card{
+    		margin-bottom: 15px;
+		}
+	}
+}
+
+.pricing-feature{
+	background:$off-white-color;
+	margin-bottom:$baseline;
+	padding:$baseline;
 }
 
 .price-indicator{

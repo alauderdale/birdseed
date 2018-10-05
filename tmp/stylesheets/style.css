@@ -3,7 +3,7 @@
 @media (max-width: 768px) {
   .no-padding-top-sm {
     padding-top: 0; } }
-section.inverse-section h1, #partner h1, section.inverse-section h2, #partner h2, section.inverse-section h3, #partner h3, section.inverse-section h4, #partner h4, section.inverse-section h5, #partner h5, section.inverse-section h6, #partner h6, section.inverse-section p, #partner p, section.inverse-section small, #partner small, section.inverse-section li, #partner li {
+section.inverse-section h1, .card .card-header.inverse-header h1, #partner h1, section.inverse-section h2, .card .card-header.inverse-header h2, #partner h2, section.inverse-section h3, .card .card-header.inverse-header h3, #partner h3, section.inverse-section h4, .card .card-header.inverse-header h4, #partner h4, section.inverse-section h5, .card .card-header.inverse-header h5, #partner h5, section.inverse-section h6, .card .card-header.inverse-header h6, #partner h6, section.inverse-section p, .card .card-header.inverse-header p, #partner p, section.inverse-section small, .card .card-header.inverse-header small, #partner small, section.inverse-section li, .card .card-header.inverse-header li, #partner li {
   color: white !important; }
 
 * {
@@ -693,8 +693,17 @@ label {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 8px; }
+  .card .card-header.inverse-header hr {
+    border-color: rgba(255, 255, 255, 0.2); }
+  .card .card-header.primary-header {
+    background: #40CC79; }
+  .card .card-header.secondary-header {
+    background: #42A5F5; }
   .card .card-body {
     padding: 32px; }
+  .card .card-footer.no-styling {
+    background: white;
+    border: none; }
   .card .card-link {
     text-transform: uppercase;
     letter-spacing: .5px;
@@ -1046,19 +1055,19 @@ footer#primary-footer {
 .main-hero {
   padding-top: 160px;
   background: url("../images/main-header-bg.svg") no-repeat top right; }
-  .main-hero img {
+  .main-hero img.hero-img {
     position: relative;
     top: -20px; }
   @media (max-width: 1200px) {
     .main-hero {
       background-position-x: 550px; }
-      .main-hero img {
+      .main-hero img.hero-img {
         width: 440px;
         top: 0px; } }
   @media (max-width: 992px) {
     .main-hero {
       background-position-x: 400px; }
-      .main-hero img {
+      .main-hero img.hero-img {
         width: 420px;
         left: 10px; }
       .main-hero .btn {
@@ -1070,7 +1079,7 @@ footer#primary-footer {
       padding-bottom: none;
       text-align: center;
       background-image: none; }
-      .main-hero img {
+      .main-hero img.hero-img {
         margin-top: 32px;
         max-width: 100%; }
       .main-hero .btn {
@@ -1396,7 +1405,7 @@ ul.pricing-list {
   width: 100%; }
   ul.pricing-list li {
     border-bottom: 1px solid #EDEDED;
-    padding: 16px 0;
+    padding: 8px 0;
     vertical-align: middle; }
     ul.pricing-list li p {
       margin-bottom: 0;
@@ -1408,6 +1417,17 @@ ul.pricing-list {
         top: 3px; }
     ul.pricing-list li:last-of-type {
       border: none; }
+
+@media (max-width: 768px) {
+  .pricing-card-deck {
+    flex-direction: column; }
+    .pricing-card-deck .card {
+      margin-bottom: 15px; } }
+
+.pricing-feature {
+  background: #F5F7F9;
+  margin-bottom: 16px;
+  padding: 16px; }
 
 .price-indicator {
   position: relative;
